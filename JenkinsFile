@@ -10,5 +10,8 @@ node {
 	
 	stage 'Archive'
 		archive 'JenkinsTestProj/Website/**'
+		
+	stage 'Notifications'
+		archive 'JenkinsTestProj/Website/**'
 
 }
