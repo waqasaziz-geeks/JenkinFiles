@@ -6,6 +6,7 @@ node {
 	
 		bat 'nuget restore JenkinsTestProj.sln'
 		bat "msbuild JenkinsTestProj.sln /p:VisualStudioVersion=15.0"
+		emailext body: "Please go to ${BUILD_URL} and verify the build", subject: "Job '${JOB_NAME}' (${BUILD_NUMBER}) finsihed", to: 'waqas.aziz@geeks.ltd.uk'
 
 	
 	stage 'Archive'
