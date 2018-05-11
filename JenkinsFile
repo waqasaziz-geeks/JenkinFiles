@@ -11,7 +11,7 @@ node {
 	stage 'Archive'
 		archive 'JenkinsTestProj/Website/**'
 		
-	stage 'Notifications'
+	stage 'Notification'
 		archive 'JenkinsTestProj/Website/**'
 
 }
